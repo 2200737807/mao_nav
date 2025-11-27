@@ -309,8 +309,8 @@ export const mockData = {
     },
     {
       "id": "design",
-      "name": "游戏攻略",
-      "icon": "🎮",
+      "name": "设计美学",
+      "icon": "🎨",
       "order": 6,
       "sites": [
         {
@@ -344,6 +344,5 @@ export const mockData = {
       ]
     }
   ],
-  "title": "叶枫导航",
-  "_fileSha": "67524e1887de6acf2092888dc6de1cc8589ce3fc"
+  "title": "叶枫导航"
 }
