@@ -109,58 +109,58 @@ export const mockData = {
     },
     {
       "id": "cloud",
-      "name": "云服务",
-      "icon": "☁️",
+      "name": "叶枫自用",
+      "icon": "📁",
       "order": 2,
       "sites": [
         {
           "id": "cloudflare",
-          "name": "Cloudflare",
-          "url": "https://www.cloudflare.com",
-          "description": "全球CDN和网络安全服务",
-          "icon": "/sitelogo/www.cloudflare.com.ico"
+          "name": "工作博客",
+          "url": "http://43.133.27.159:3001/",
+          "description": "工作博客",
+          "icon": "https://pic1.imgdb.cn/item/6921d7003203f7be0021e461.png"
         },
         {
           "id": "vercel",
-          "name": "Vercel",
-          "url": "https://vercel.com",
-          "description": "前端部署平台",
-          "icon": "/sitelogo/vercel.com.ico"
+          "name": "个人博客",
+          "url": "http://b.103000.vip/",
+          "description": "个人博客",
+          "icon": "https://pic1.imgdb.cn/item/6921d7003203f7be0021e461.png"
         },
         {
           "id": "aws",
-          "name": "AWS",
-          "url": "https://aws.amazon.com",
-          "description": "亚马逊云服务",
-          "icon": "/sitelogo/aws.amazon.com.ico"
+          "name": "叶枫影视",
+          "url": "http://43.133.27.159:3000/",
+          "description": "个人影视站",
+          "icon": "https://pic1.imgdb.cn/item/6921d7333203f7be0021e50b.png"
         },
         {
           "id": "aliyun",
-          "name": "阿里云",
-          "url": "https://www.aliyun.com",
-          "description": "阿里巴巴云计算",
-          "icon": "/sitelogo/www.aliyun.com.ico"
+          "name": "微信读书",
+          "url": "https://weread.qq.com/",
+          "description": "VIP拉满，每日白嫖一本书",
+          "icon": "https://rescdn.qqmail.com/node/wr/wrpage/style/images/independent/appleTouchIcon/apple-touch-icon-152x152.png"
         },
         {
           "id": "tencent-cloud",
           "name": "腾讯云",
-          "url": "https://cloud.tencent.com",
-          "description": "腾讯云计算服务",
-          "icon": "/sitelogo/cloud.tencent.com.ico"
+          "url": "https://www.tencentcloud.com/zh?lang=zh&pg=",
+          "description": "腾讯云海外",
+          "icon": "https://pic1.imgdb.cn/item/6921d7cc3203f7be0021e628.jpg"
         },
         {
           "id": "huawei-cloud",
-          "name": "华为云",
-          "url": "https://www.huaweicloud.com",
-          "description": "华为云计算服务",
-          "icon": "/sitelogo/www.huaweicloud.com.ico"
+          "name": "腾讯云",
+          "url": "https://cloud.tencent.com/",
+          "description": "腾讯云国内",
+          "icon": "https://pic1.imgdb.cn/item/6921d7cc3203f7be0021e628.jpg"
         },
         {
           "id": "site-1752644060499",
-          "name": "怕死云",
-          "url": "https://www.pasyun.com/",
-          "description": "ipv6机器",
-          "icon": "/sitelogo/www.pasyun.com.ico"
+          "name": "搬瓦工",
+          "url": "https://bandwagonhost.com/clientarea.php",
+          "description": "个人“墙裂”推荐",
+          "icon": "https://pic1.imgdb.cn/item/6921d7ad3203f7be0021e5f8.png"
         }
       ]
     },
