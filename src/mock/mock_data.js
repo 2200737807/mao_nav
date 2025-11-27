@@ -28,13 +28,6 @@ export const mockData = {
           "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
         },
         {
-          "id": "github",
-          "name": "酒店查询-大阪",
-          "url": "https://hotels.ctrip.com/hotels/map?countryId=78&city=219&provinceId=0&checkin=2025/11/26&checkout=2025/11/28&optionId=219&optionType=IntlCity&directSearch=0&display=%E5%A4%A7%E9%98%AA&crn=1&adult=2&children=0&searchBoxArg=t&travelPurpose=0&ctm_ref=ix_sb_dl&domestic=0&showtotalamt=2&intl=1",
-          "description": "大阪酒店查询",
-          "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
-        },
-        {
           "id": "curlconverter",
           "name": "查航班信息",
           "url": "https://hotels.ctrip.com/international/?intl=1",
@@ -166,51 +159,51 @@ export const mockData = {
     },
     {
       "id": "dev-tools",
-      "name": "开发工具",
-      "icon": "🛠️",
+      "name": "AI分享",
+      "icon": "📱",
       "order": 3,
       "sites": [
         {
           "id": "github",
-          "name": "GitHub",
-          "url": "https://github.com",
+          "name": "cherry-ai",
+          "url": "https://www.cherry-ai.com/",
           "description": "代码托管平台",
-          "icon": "/sitelogo/github.com.ico"
-        },
-        {
-          "id": "vscode",
-          "name": "VS Code",
-          "url": "https://code.visualstudio.com",
-          "description": "代码编辑器",
-          "icon": "/sitelogo/code.visualstudio.com.ico"
+          "icon": "https://cherry-ai.com/assets/favicon-BmbgeFTf.png"
         },
         {
           "id": "webstorm",
-          "name": "WebStorm",
-          "url": "https://www.jetbrains.com/webstorm/",
-          "description": "专业前端IDE",
-          "icon": "/sitelogo/www.jetbrains.com.ico"
+          "name": "硅基流动",
+          "url": "https://www.siliconflow.cn/",
+          "description": "大模型API",
+          "icon": "https://www.siliconflow.cn/favicon.ico"
         },
         {
           "id": "postman",
-          "name": "Postman",
-          "url": "https://www.postman.com",
-          "description": "API测试工具",
-          "icon": "/sitelogo/www.postman.com.ico"
+          "name": "cherryin",
+          "url": "https://open.cherryin.ai/",
+          "description": "大模型API",
+          "icon": "https://open.cherryin.ai/logo.png"
+        },
+        {
+          "id": "github",
+          "name": "元宝",
+          "url": "https://yuanbao.tencent.com/chat/naQivTmsDa",
+          "description": "腾讯",
+          "icon": "https://static.yuanbao.tencent.com/m/yuanbao-web/favicon@32.png"
+        },
+        {
+          "id": "vscode",
+          "name": "豆包",
+          "url": "https://www.doubao.com/chat/",
+          "description": "抖音",
+          "icon": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/favicon/180x180.png"
         },
         {
           "id": "android-studio",
-          "name": "Android Studio",
-          "url": "https://developer.android.com/studio",
-          "description": "Android官方开发工具",
-          "icon": "/sitelogo/developer.android.com.ico"
-        },
-        {
-          "id": "oracle-java",
-          "name": "Oracle Java",
-          "url": "https://www.oracle.com/java/technologies/downloads/",
-          "description": "Oracle官方Java下载",
-          "icon": "/sitelogo/www.oracle.com.ico"
+          "name": "Seaart",
+          "url": "https://www.seaart.me/zhCN?u_code=4S53L7",
+          "description": "海艺-艺术AI",
+          "icon": "https://image.cdn2.seaart.ai/icon/logo48new.webp"
         }
       ]
     },
