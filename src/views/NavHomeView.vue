@@ -192,7 +192,7 @@
 
               <div class="footer-links">
                 <a
-                  href="https://github.com/maodeyu180/mao_nav"
+                  href="https://github.com/2200737807/mao_nav/tree/master"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="footer-link"
