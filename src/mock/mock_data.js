@@ -2,44 +2,65 @@ export const mockData = {
   "categories": [
     {
       "id": "my-favorites",
-      "name": "我的常用",
-      "icon": "💥",
+      "name": "办公常用",
+      "icon": "💻",
       "order": 0,
       "sites": [
         {
           "id": "site-1752649007053",
-          "name": "BeJson",
-          "url": "https://www.bejson.com/",
-          "description": "工具大全",
-          "icon": "/sitelogo/www.bejson.com.ico"
+          "name": "酒店查询-济州",
+          "url": "https://hotels.ctrip.com/hotels/map?countryId=42&city=737&checkin=2024/04/10&checkout=2024/04/11&optionId=1385458&optionType=Hotel&directSearch=0&optionName=%E6%B5%8E%E5%B7%9E%E4%B9%90%E5%A4%A9%E5%9F%8E%E5%B8%82%E9%85%92%E5%BA%97&display=%E6%B5%8E%E5%B7%9E%E4%B9%90%E5%A4%A9%E5%9F%8E%E5%B8%82%E9%85%92%E5%BA%97%2C%20%E6%B5%8E%E5%B7%9E%E5%B8%82%2C%20%E6%B5%8E%E5%B7%9E%E7%89%B9%E5%88%AB%E8%87%AA%E6%B2%BB%E9%81%93%2C%20%E9%9F%A9%E5%9B%BD&crn=1&adult=1&children=0&searchBoxArg=t&travelPurpose=0&ctm_ref=ix_sb_dl&domestic=0&intl=1",
+          "description": "济州岛酒店查询",
+          "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
         },
         {
           "id": "linux-do",
-          "name": "Linux.do",
-          "url": "https://linux.do",
-          "description": "Linux技术社区，Peace and Love",
-          "icon": "/sitelogo/linux.do.ico"
+          "name": "酒店查询-首尔",
+          "url": "https://hotels.ctrip.com/hotels/map?countryId=42&city=274&checkin=2024/04/10&checkout=2024/04/11&optionId=274&optionType=IntlCity&directSearch=1&optionName=%E5%A4%A7%E4%BD%BF%E8%B4%B9%E5%B0%94%E8%92%99&display=%E5%A4%A7%E4%BD%BF%E8%B4%B9%E5%B0%94%E8%92%99&crn=1&adult=1&children=0&searchBoxArg=t&travelPurpose=0&ctm_ref=ix_sb_dl&domestic=1&",
+          "description": "首尔酒店查询",
+          "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
         },
         {
           "id": "site-1752857783656",
-          "name": "OpenAI",
-          "url": "https://chatgpt.com",
-          "description": "OpenAI,好用👌",
-          "icon": "/sitelogo/chatgpt.com.ico"
+          "name": "酒店查询-东京",
+          "url": "https://hotels.ctrip.com/hotels/map?flexType=1&cityId=228&provinceId=0&districtId=0&countryId=78&destName=%E4%B8%9C%E4%BA%AC&searchType=CT&optionId=228&checkin=2025-11-22&checkout=2025-11-23&crn=1&curr=CNY&locale=zh-CN&v2_mod=79&v2_version=E&showtotalamt=2&sort=1&adult=2&optionType=City&optionId=228",
+          "description": "东京酒店查询",
+          "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
         },
         {
           "id": "github",
-          "name": "GitHub",
-          "url": "https://github.com",
-          "description": "代码托管平台",
-          "icon": "/sitelogo/github.com.ico"
+          "name": "酒店查询-大阪",
+          "url": "https://hotels.ctrip.com/hotels/map?countryId=78&city=219&provinceId=0&checkin=2025/11/26&checkout=2025/11/28&optionId=219&optionType=IntlCity&directSearch=0&display=%E5%A4%A7%E9%98%AA&crn=1&adult=2&children=0&searchBoxArg=t&travelPurpose=0&ctm_ref=ix_sb_dl&domestic=0&showtotalamt=2&intl=1",
+          "description": "大阪酒店查询",
+          "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
         },
         {
           "id": "curlconverter",
-          "name": "curl converter",
-          "url": "https://curlconverter.com/",
-          "description": "curl命令转换工具",
-          "icon": "/sitelogo/curlconverter.com.ico"
+          "name": "查航班信息",
+          "url": "https://hotels.ctrip.com/international/?intl=1",
+          "description": "航班信息查询",
+          "icon": "https://pic1.imgdb.cn/item/6921d6213203f7be0021e2ae.png"
+        },
+        {
+          "id": "site-1764246095036",
+          "name": "济州岛天气",
+          "url": "https://zoom.earth/maps/temperature/#view=33.339038,126.564144,10z/model=icon",
+          "description": "全岛温度查询",
+          "icon": "https://zoom.earth/assets/images/icon-apple.3.jpg"
+        },
+        {
+          "id": "site-1764246116082",
+          "name": "济州天气查询",
+          "url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%A0%9C%EC%A3%BC%EB%82%A0%EC%94%A8",
+          "description": "济州岛天气查询(需要魔法)",
+          "icon": "https://ssl.pstatic.net/sstatic/search/favicon/favicon_32x32_240820.ico"
+        },
+        {
+          "id": "site-1764246140435",
+          "name": "地址查询",
+          "url": "https://www.google.com/maps",
+          "description": "谷歌地图（需要魔法）",
+          "icon": "https://pic1.imgdb.cn/item/6921d5f43203f7be0021e26a.png"
         }
       ]
     },
@@ -481,7 +502,5 @@ export const mockData = {
       ]
     }
   ],
-  "title": "叶枫-云收藏夹",
-  "_fileSha": "9148e06131f637497253cc92025bb620ff447664",
-  "search": "baidu"
+  "title": "猫猫导航🐱你的密钥被破解了"
 }
