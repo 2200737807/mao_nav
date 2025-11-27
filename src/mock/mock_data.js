@@ -66,44 +66,44 @@ export const mockData = {
     },
     {
       "id": "ai-tools",
-      "name": "AI智能",
-      "icon": "🤖",
+      "name": "工作入口",
+      "icon": "🛠️",
       "order": 1,
       "sites": [
         {
           "id": "chatgpt",
-          "name": "ChatGPT",
-          "url": "https://chat.openai.com",
-          "description": "OpenAI对话AI助手",
-          "icon": "/sitelogo/chat.openai.com.ico"
+          "name": "美团",
+          "url": "https://eo.dianping.com/epassport/home",
+          "description": "美团后台登录",
+          "icon": "https://pic1.imgdb.cn/item/6921d6863203f7be0021e35d.png"
         },
         {
           "id": "claude",
-          "name": "Claude",
-          "url": "https://claude.ai",
-          "description": "Anthropic AI助手",
-          "icon": "/sitelogo/claude.ai.ico"
+          "name": "去哪儿网",
+          "url": "https://tts2.piao.qunar.com/home",
+          "description": "去哪儿网后台登录",
+          "icon": "https://pic1.imgdb.cn/item/6921d6bb3203f7be0021e3d8.jpg"
         },
         {
           "id": "midjourney",
-          "name": "Midjourney",
-          "url": "https://www.midjourney.com",
-          "description": "AI图像生成工具",
-          "icon": "/sitelogo/www.midjourney.com.ico"
+          "name": "客路",
+          "url": "https://merchant.klook.com/zh-CN/login?redirect_url=https%3A%2F%2Fmerchant.klook.com%2Fzh-CN%2Flogin%3Fredirect_url%3Dhttps%253A%252F%252Fmerchant.klook.com%252Fzh-CN%252Fbooking",
+          "description": "客路后台登录",
+          "icon": "https://res.klook.com/image/upload/v1640059532/merchant/favicon_v2.png"
         },
         {
           "id": "copilot",
-          "name": "GitHub Copilot",
-          "url": "https://github.com/features/copilot",
-          "description": "AI代码助手",
-          "icon": "/sitelogo/github.com.ico"
+          "name": "森林小火车",
+          "url": "https://cp.jejuv.com/login/?REFERER=",
+          "description": "森林小火车出票",
+          "icon": "https://pic1.imgdb.cn/item/6921d6db3203f7be0021e419.png"
         },
         {
           "id": "cursor",
-          "name": "Cursor",
-          "url": "https://cursor.sh",
-          "description": "AI代码编辑器",
-          "icon": "/sitelogo/cursor.sh.ico"
+          "name": "飞猪",
+          "url": "https://seller.fliggy.com/sellerSycm#/?industry=BUS",
+          "description": "飞猪销量查询",
+          "icon": "https://g.alicdn.com/trip/tools/img/favicon.ico?20131130"
         }
       ]
     },
@@ -502,7 +502,5 @@ export const mockData = {
       ]
     }
   ],
-  "title": "叶枫云书签",
-  "_fileSha": "a17a31f3ab66b758e9f82c666882ca7915b86518",
-  "search": "baidu"
+  "title": "猫猫导航🐱你的密钥被破解了"
 }
