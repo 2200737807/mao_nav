@@ -102,7 +102,7 @@ export const mockData = {
     },
     {
       "id": "cloud",
-      "name": "叶枫自用",
+      "name": "叶枫常用",
       "icon": "📁",
       "order": 2,
       "sites": [
@@ -154,6 +154,13 @@ export const mockData = {
           "url": "https://bandwagonhost.com/clientarea.php",
           "description": "个人“墙裂”推荐",
           "icon": "https://pic1.imgdb.cn/item/6921d7ad3203f7be0021e5f8.png"
+        },
+        {
+          "id": "site-1764247957218",
+          "name": "聚合图床",
+          "url": "https://www.superbed.cn/",
+          "description": "每月免费500张",
+          "icon": "https://www.superbed.cn/favicon.ico"
         }
       ]
     },
