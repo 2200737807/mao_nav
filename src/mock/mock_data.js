@@ -54,15 +54,7 @@ export const mockData = {
           "url": "https://www.google.com/maps",
           "description": "谷歌地图（需要魔法）",
           "icon": "https://pic1.imgdb.cn/item/6921d5f43203f7be0021e26a.png"
-        }
-      ]
-    },
-    {
-      "id": "ai-tools",
-      "name": "工作入口",
-      "icon": "🛠️",
-      "order": 1,
-      "sites": [
+        },
         {
           "id": "chatgpt",
           "name": "美团",
