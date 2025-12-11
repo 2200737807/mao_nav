@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="zh-CN">
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="public/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mao Nav</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>PocketVerse - 个人导航站</title>
+    <!-- 自定义Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- PNG格式Favicon（推荐） -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Favicon配置文件 -->
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#191a1a">
+    <meta name="theme-color" content="#191a1a">
+    <!-- 按钮发光效果滤镜 -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter width="3000%" x="-1000%" height="3000%" y="-1000%" id="unopaq">
+            <feColorMatrix
+                values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 3 0"
+            ></feColorMatrix>
+        </filter>
+    </svg>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 导航栏 -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">PocketVerse</h1>
+                <div class="search-box">
+                    <label class="search-label">
+                        <div class="search-engine-icons">
+                            <button id="baiduIcon" class="engine-icon baidu active" title="百度搜索">B</button>
+                            <button id="googleIcon" class="engine-icon google" title="谷歌搜索">G</button>
+                        </div>
+                        <input type="text" id="searchInput" name="text" class="input" required="" placeholder="搜索网站..." autocomplete="off">
+                        <span class="slash-icon">/</span>
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 56.966 56.966">
+                            <g>
+                                <path d="M55.146 51.887 41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" fill="currentColor" data-original="#000000" class=""></path>
+                            </g>
+                        </svg>
+                    </label>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主体内容 -->
+        <main class="main">
+            <div id="categories"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

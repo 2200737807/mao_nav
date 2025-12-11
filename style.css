@@ -1,0 +1,686 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #191a1a;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    --color: rgba(114, 114, 114, 0.3);
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.header-content .title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+/* 搜索框样式 */
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* 调整宽度以适应新样式 */
+    display: flex;
+    align-items: center;
+}
+
+/* 搜索标签容器 - 新UI设计 */
+.search-label {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #3D3D3D;
+    padding: 9px;
+    cursor: text;
+    width: 100%;
+}
+
+.search-label:hover {
+    border-color: gray;
+}
+
+.search-label:focus-within {
+    background: #464646;
+    border-color: gray;
+}
+
+/* 搜索输入框样式 */
+.input {
+    outline: none;
+    width: 100%;
+    border: none;
+    background: none;
+    color: rgb(162, 162, 162);
+    padding: 0 0 0 80px; /* 为左侧搜索引擎图标留出空间 */
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* 搜索图标 */
+.search-icon {
+    position: absolute;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    color: #777;
+    pointer-events: none;
+    transition: color 0.3s ease;
+    display: none;
+}
+
+.input:focus ~ .search-icon {
+    color: #7e7e7e;
+}
+
+/* 斜杠图标 */
+.slash-icon {
+    position: absolute;
+    right: 7px;
+    border: 1px solid #393838;
+    background: linear-gradient(-225deg, #343434, #6d6d6d);
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: inset 0 -2px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93), 0 1px 2px 1px rgba(28, 28, 29, 0.4);
+    cursor: pointer;
+    font-size: 12px;
+    width: 15px;
+    color: #7e7e7e;
+    user-select: none;
+}
+
+.slash-icon:active {
+    box-shadow: inset 0 1px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93), 0 1px 2px 0 rgba(28, 28, 29, 0.4);
+    text-shadow: 0 1px 0 #7e7e7e;
+    color: transparent;
+}
+
+/* 输入框状态变化 */
+.input:focus+.slash-icon,
+.input:valid+.slash-icon {
+    display: block;
+}
+
+.input:valid~.search-icon {
+    display: block;
+}
+
+.input:valid {
+    width: calc(100% - 22px);
+    transform: translateX(0); /* 保持输入框位置不变，因为我们有左侧图标 */
+}
+
+/* 搜索引擎切换按钮 - 与搜索栏UI匹配 */
+.search-engine-icons {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+}
+
+.engine-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #343434;
+    color: #ccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    /* 增加内边距以扩大点击区域 */
+    padding: 8px;
+}
+
+.engine-icon.baidu {
+    background-color: #3385FF;
+    color: #fff;
+}
+
+.engine-icon.google {
+    background-color: #4285F4;
+    color: #fff;
+}
+
+.engine-icon.active {
+    border-color: #7e7e7e;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.engine-icon:hover:not(.active) {
+    border-color: #555;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+/* 搜索引擎切换样式已移除，使用左侧圆形图标替代 */
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    margin-top: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    /* 确保在触摸设备上可滚动 */
+    -webkit-overflow-scrolling: touch;
+}
+
+.search-results .result-item {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    color: #fff;
+    /* 触摸反馈 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    touch-action: manipulation;
+    min-height: 44px;
+}
+
+.search-results .result-item:hover {
+    background-color: #2a2a2a;
+}
+
+.search-results .result-item img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+/* Radio Input 标签栏样式 */
+/* From Uiverse.io by MikeeMikee */
+.radio-input {
+    --container_width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #212121;
+    color: #fff;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-input label {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    min-width: 100px;
+}
+
+.radio-input input {
+    display: none;
+}
+
+.radio-input .selection {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    background-color: #ffe500;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+
+/* 使用JavaScript添加选中样式，提高兼容性 */
+.radio-input .selected-label {
+    color: #000 !important;
+}
+
+/* 分类样式 */
+.category {
+    display: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category.active {
+    display: block;
+}
+
+/* 网站网格样式 */
+.website-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+/* 触摸友好的可点击元素 */
+.search-engine-icons .engine-icon,
+.website-grid a,
+.radio-input label {
+    /* 确保足够的点击区域 */
+    min-height: 44px;
+    display: block;
+    /* 触摸反馈 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.website-card {
+    text-decoration: none;
+    background: none;
+    border-radius: 8px;
+    padding: 0;
+    display: block;
+    backdrop-filter: none;
+    border: none;
+    /* 触摸反馈 */
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    min-height: auto;
+}
+
+.website-card:hover {
+    background: none;
+    transform: none;
+    box-shadow: none;
+}
+
+/* 触摸时的效果 */
+.website-card:active {
+    transform: none;
+    background: none;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.glitch-button {
+    --color: #560bad; /* 默认颜色 */
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--button-color, var(--color)); /* 使用随机颜色或默认颜色 */
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--button-color, var(--color)); /* 使用随机颜色或默认颜色 */
+}
+
+.glitch-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--button-color, var(--color)); /* 使用随机颜色或默认颜色 */
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.glitch-button:hover {
+    color: #fff;
+}
+
+.glitch-button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.glitch-button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.glitch-button:active:before {
+    background: var(--button-color, #3a0ca3); /* 使用随机颜色的深色或默认深色 */
+    transition: background 0s;
+}
+
+/* 新链接UI样式 - From Uiverse.io by Cybercom682 */
+.button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow: visible;
+    border-left: 4px solid #ccc;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 不同颜色的提示框样式 */
+.button.success {
+    background: #d1fae5;
+    border-left-color: #10b981;
+    color: #065f46;
+}
+
+.button.success:hover {
+    background: #a7f3d0;
+}
+
+.button.info {
+    background: #dbeafe;
+    border-left-color: #3b82f6;
+    color: #1e40af;
+}
+
+.button.info:hover {
+    background: #bfdbfe;
+}
+
+.button.warning {
+    background: #fef3c7;
+    border-left-color: #f59e0b;
+    color: #92400e;
+}
+
+.button.warning:hover {
+    background: #fde68a;
+}
+
+.button.error {
+    background: #fee2e2;
+    border-left-color: #ef4444;
+    color: #991b1b;
+}
+
+.button.error:hover {
+    background: #fecaca;
+}
+
+/* 图标样式 */
+.button svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+/* 文本样式 */
+.text {
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 箭头样式 */
+.arrow {
+    position: absolute;
+    right: 8px;
+    font-size: 10px;
+    opacity: 0.6;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 移除旧的箭头动画效果 */
+/* .button:hover .arrow {
+    transform: translateX(0);
+    opacity: 1;
+} */
+
+/* 移除网站图标相关样式 */
+
+/* 网站卡片文本样式 */
+.website-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 4px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+/* Grid background is now applied to the container */
+
+.website-url {
+    font-size: 12px;
+    color: #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+/* 移动设备上的文本大小优化 */
+@media (max-width: 768px) {
+    .website-name {
+        font-size: 14px;
+    }
+    
+    .website-url {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .website-name {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    
+    .website-url {
+        font-size: 10px;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .website-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-content {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .website-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+    }
+    
+    /* 更新按钮在中等屏幕上的样式 */
+    .button {
+        width: 100%;
+        font-size: 13px;
+        height: 36px;
+    }
+    
+    /* 优化标签栏在中等屏幕上的布局 */
+    .radio-input label {
+        min-width: 80px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .website-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    /* 更新按钮在小屏幕上的样式 */
+    .button {
+        width: 100%;
+        font-size: 12px;
+        height: 34px;
+        padding: 0 10px;
+    }
+    
+    /* 优化标签栏在小屏幕上的布局 */
+    .radio-input {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 8px;
+    }
+    
+    .radio-input label {
+        min-width: auto;
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 13px;
+        border-bottom: 1px solid #333;
+    }
+    
+    .radio-input label:last-child {
+        border-bottom: none;
+    }
+    
+    .radio-input .selection {
+        display: none;
+    }
+    
+    /* 优化搜索框在小屏幕上的样式 */
+    .search-box {
+        max-width: 100%;
+    }
+    
+    .input {
+        padding: 0 60px 0 60px;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
