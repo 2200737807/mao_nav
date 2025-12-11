@@ -7,7 +7,7 @@ const categories = [
             { name: "个人博客", url: "b.103000.vip" },
             { name: "工作博客", url: "blog.103000.vip" },
             { name: "个人主页", url: "new.103000.vip" },
-            { name: "个人导航", url: "nav.103000.vip" },
+            { name: "个人导航", url: "n.103000.vip" },
             { name: "个人影视站", url: "43.133.27.159:3000" },
             { name: "客服工具", url: "tools.103000.vip" }
         ]
